@@ -1,0 +1,81 @@
+Research Questions and Results (Mini Orchestrator)
+
+1. Which LLM (AI Agent) achieves the highest accuracy in zero-shot sentiment classification?
+Highest accuracy: gpt-5-mini-2025-08-07_agentic_prediction
+
+2. For which rating levels (1–5) do AI Agents most often fail to predict correctly?
+gemini-2.5-pro_prediction: Hardest rating 3 (65.30% failures)
+gemini-2.5-flash_prediction: Hardest rating 3 (77.40% failures)
+gemini-2.5-flash-lite_prediction: Hardest rating 3 (64.50% failures)
+gpt-5_prediction: Hardest rating 3 (71.50% failures)
+gpt-5-mini_prediction: Hardest rating 3 (69.90% failures)
+gpt-5-nano-2025-08-07_prediction: Hardest rating 3 (68.40% failures)
+gpt-4.1_prediction: Hardest rating 3 (58.30% failures)
+claude-sonnet-4-5_prediction: Hardest rating 3 (55.70% failures)
+claude-haiku-4-5_prediction: Hardest rating 3 (70.00% failures)
+claude-opus-4-1_prediction: Hardest rating 3 (57.50% failures)
+deepseek-chat_prediction: Hardest rating 3 (61.20% failures)
+deepseek-reasoner_prediction: Hardest rating 2 (62.50% failures)
+Overall hardest rating: 3 (avg 64.83% failures)
+
+Which rating is easiest for models to predict? First evaluate for each model and then the total.
+gemini-2.5-pro_prediction: Easiest rating 1 (92.00% success)
+gemini-2.5-flash_prediction: Easiest rating 1 (92.00% success)
+gemini-2.5-flash-lite_prediction: Easiest rating 1 (86.50% success)
+gpt-5_prediction: Easiest rating 1 (85.00% success)
+gpt-5-mini_prediction: Easiest rating 1 (83.70% success)
+gpt-5-nano-2025-08-07_prediction: Easiest rating 5 (73.40% success)
+gpt-4.1_prediction: Easiest rating 5 (81.70% success)
+claude-sonnet-4-5_prediction: Easiest rating 5 (84.30% success)
+claude-haiku-4-5_prediction: Easiest rating 1 (79.30% success)
+claude-opus-4-1_prediction: Easiest rating 5 (76.10% success)
+deepseek-chat_prediction: Easiest rating 5 (83.80% success)
+deepseek-reasoner_prediction: Easiest rating 1 (87.50% success)
+Overall easiest rating: 1 (avg 82.73% success)
+
+3. How does Agentic AI improve overall results through orchestration and reasoning?
+Orchestrator Accuracy: 0.7032, Average Model: 0.6125, Improvement: 0.0907
+
+4. Which AI Agents contribute positively or negatively to the orchestrator’s performance?
+                               Model  Positive Influence  Negative Influence
+0          gemini-2.5-pro_prediction                 161                 142
+1        gemini-2.5-flash_prediction                 156                 128
+2   gemini-2.5-flash-lite_prediction                 173                 158
+3                   gpt-5_prediction                 193                 160
+4              gpt-5-mini_prediction                   0                   0
+5   gpt-5-nano-2025-08-07_prediction                 189                 155
+6                 gpt-4.1_prediction                 205                 137
+7       claude-sonnet-4-5_prediction                 219                 135
+8        claude-haiku-4-5_prediction                 208                 156
+9         claude-opus-4-1_prediction                 238                 137
+10          deepseek-chat_prediction                 200                 145
+11      deepseek-reasoner_prediction                 178                 150
+
+5. How frequently does the orchestrator revise its predictions based on agent input, and are such revisions beneficial or detrimental?
+Total Changes: 788, Improved: 551, Worsened: 152
+
+6. How often does the orchestrator disregard agent recommendations, and is this decision advantageous?
+Disregard Count: 175, Percentage: 3.50%, Correct: 169, Incorrect: 6
+
+7. Which models most strongly influence the orchestrator’s decisions, and which are least trusted?
+Most influential: gpt-5-mini_prediction, Least trusted: gemini-2.5-flash_prediction
+
+8. How does a model’s performance as an orchestrator (in an Agentic AI setup) compare to its performance when operating independently?
+Total Changes: 878, Improved: 589, Worsened: 193
+
+9. Does the orchestrator primarily rely on majority voting, or does it reason directly over textual content? How often does each occur?
+Matches Majority: 4227, Differs: 773, Acc when Match: 0.7062, Acc when Differ: 0.6869
+
+10. Which agents behave as outliers, potentially disrupting the overall agentic ai system?
+Outlier agents: ['gemini-2.5-pro_prediction', 'gemini-2.5-flash-lite_prediction', 'gpt-5-nano-2025-08-07_prediction', 'claude-haiku-4-5_prediction', 'claude-opus-4-1_prediction']
+
+11. Are pre-trained LLMs without fine-tuning capable of accurately capturing sentiment from user feedback?
+Average Accuracy: 0.6125, Max: 0.6502, Min: 0.5686
+
+12. Finally, is Agentic AI worth the added complexity—particularly when balancing accuracy against computational cost?
+Accuracy Improvement: 0.0907
+Total Individual Models Cost: $105.72
+Orchestrator Cost: $6.14
+Cost Difference: $-99.58
+Cost per Accuracy Point Improvement: $-1098.31
+Conclusion: Agentic AI improves accuracy at a lower cost. Evaluate if the improvement justifies the expense.
