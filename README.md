@@ -1,4 +1,4 @@
-# Agentic AI with Orchestrator-Agent Trust: A Modular Visual Classification Framework with Trust-Aware Orchestration and RAG-Based Reasoning
+# Agentic AI vs AI Agents in Recommender Systems: A Comparative Study on Sentiment Analysis with Large Language Models
 
 ## Article
 * **Journal**: pending
